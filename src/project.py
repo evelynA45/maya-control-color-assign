@@ -1,3 +1,5 @@
+import sys
+import time
 
 # Take left controls and color them
 
@@ -25,14 +27,23 @@ def middle_color():
         cmds.setAttr(shapes[0] + '.overrideEnabled', 1)
         cmds.setAttr(shapes[0] + '.overrideColor', 17)
         
+#Print effect
+ 
+def typewriter_print(text, delay=0.05):
+     for char in text:
+         sys.stdout.write(char)
+         sys.stdout.flush()
+         time.sleep(delay)
+     print()
+        
 #Run in main function
 
 def main():
-    print("Coloring controls...")
+    typewriter_print("Coloring controls...")
     left_color()
     right_color()
     middle_color()
-    print("Coloring done!")
+    typewriter_print("Coloring done!", delay=0.05)
 
 if __name__ == "__main__":
     main()
