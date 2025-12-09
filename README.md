@@ -6,7 +6,7 @@ Demo Video:
 
 ## GitHub Repository
 
-GitHub Repo: 
+GitHub Repo: https://github.com/evelynA45/maya-control-color-assign.git
 
 ## Description
 
